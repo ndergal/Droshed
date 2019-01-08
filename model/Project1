@@ -1,0 +1,45 @@
+<config-model>
+	<config-colonnes>
+		<colonne id="1" name="demo" type="integer" editable="true" min="0" max="20"/>
+		<colonne id="2" name="comment" type="float" editable="true" min="0" max="1"/>
+		<colonne id="3" name="archi" type="integer" editable="true" min="0" max="20"/>
+		<colonne id="4" name="doc" type="integer" editable="true" min="0" max="20"/>
+		<colonne id="5" name="func" type="float" editable="true" min="0" max="1"/>
+		<colonne id="6" name="rem" type="string" editable="true"/>
+	</config-colonnes>
+	<config-lignes>
+		<ligne id="1" name="JASON BIENAIME"/>
+		<ligne id="2" name="JULIEN PLANCQUEEL"/>
+		<ligne id="3" name="BAPTISTE BLANCHARD"/>
+		<ligne id="4" name="REMY NGUYEN"/>
+		<ligne id="5" name="JEAN-DAVID CHRUN"/>
+		<ligne id="6" name="ERWAN COATMEUR"/>
+		<ligne id="7" name="TEDDY MAROUDIN APAVOU"/>
+		<ligne id="8" name="PIERRE NOEL"/>
+		<ligne id="9" name="ANDRE BEAULIEU"/>
+		<ligne id="10" name="RODOLPHE DROCOURT"/>
+		<ligne id="11" name="THIBAULT GIRARD"/>
+		<ligne id="12" name="LANDRY MPATI"/>
+		<ligne id="13" name="JULIEN BROSSARD"/>
+		<ligne id="14" name="CLEMENT SORNEAU"/>
+		<ligne id="15" name="ANTOINE GANTHIER"/>
+		<ligne id="16" name="YANIS SALAH"/>
+		<ligne id="17" name="NACER DERGAL"/>
+		<ligne id="18" name="SOPHIE TRAN"/>
+		<ligne id="19" name="GWENAEL LEROUX"/>
+		<ligne id="20" name="VINCENT OTTINI"/>
+		<ligne id="21" name="HUGO FEUILLATRE"/>
+		<ligne id="22" name="MOHAMED JLILI"/>
+		<ligne id="23" name="CHRISTOPHE DOS SANTOS"/>
+		<ligne id="24" name="GAUTHIER RENARD"/>
+		<ligne id="25" name="MARIE CHETIF"/>
+		<ligne id="26" name="REMI DEGRELLE"/>
+		<ligne id="27" name="ICHRAK REZGUI"/>
+		<ligne id="28" name="HAMED TAMELA"/>
+		<ligne id="29" name="JEAN-BAPTISTE CECCALDI"/>
+		<ligne id="30" name="AXEL HEINE"/>
+		<ligne id="31" name="AXEL ROLO"/>
+		<ligne id="32" name="THEO SERAFINI"/>
+		<ligne id="33" name="ADRIEN TURIOT"/>
+	</config-lignes>
+</config-model>

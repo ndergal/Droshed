@@ -1,0 +1,50 @@
+Dans tous ces fichiers XML, les balises englobantes servent à la lecture des fichiers par l'homme.
+L'application ne lit finalement que les balises finales.
+
+Le fichier XML model/models :
+
+	Le fichier XML model/models contient la liste des modèles disponibles sur le serveur.
+	Il a une balise englobante <models> et une balise <sheet /> par modèle disponible.
+	La balise <sheet /> contient comme argument le champ name définissant le nom du modèle. 
+	Attention ! Le nom cité ici doit être identique au nom du modèle.
+
+	Exemple de fichier XML model/models :
+	<models>
+		<sheet name="Project1"/>
+	</models>
+
+
+Le fichier XML model/<Nom du modèle> :
+
+	Le fichier XML model/<Nom du modèle> contient la liste des cellules de la première dimension et de la deuxième dimension.
+	Il a une balise englobante <config-model> incluant deux autres sous-balises englobantes.
+	La sous-balise englobante <config-colonnes> définie la première dimension et donc contient les balises finales <colonne />.
+	La balise <colonne /> contient le numéro de colonne (id), l'intitulé de la colonne (name). 
+	Ses autres champs définissent le type attendu dans les cellules ayant cet id de colonne. 
+	type défini le type attendu, editable défini si la cellule est modifiable, min défini pour un numérique la valeur minimale et max 		défini pour un numérique la valeur maximale. 
+	Ces deux derniers ne sont pas pris en compte pour les autres types.
+	La sous-balise englobante <config-lignes> définie la deuxième dimension (de base) et donc contient les balises finales <ligne />.
+	La balise <ligne /> contient le numéro de ligne (id) et l'intitulé de la ligne (name).
+
+	Exemple de fichier XML model/<Nom du modèle> : 
+	<config-model>
+		<config-colonnes>
+			<colonne id="1" name="demo" type="integer" editable="true" min="0" max="20"/>
+		</config-colonnes>
+		<config-lignes>
+			<ligne id="1" name="JASON BIENAIME"/>
+		</config-lignes>
+	</config-model>
+
+
+Le fichier XML data/<Nom du modèle>/<Login de l'utilisateur>/<Numéro de version> :
+
+	Le fichier XML data/<Nom du modèle>/<Login de l'utilisateur>/<Numéro de version> contient la liste des modifications qui ont été faites sur cette version.
+	Il a une balise englobante <Datas> et une balise <Update-Cell /> par modification effectuée sur cette version.
+	La balise <Update-Cell /> contient le numéro de ligne (idRow), le numéro de colonne (idCol), le nouvel intitulé (text) et le numéro de version de modification de la cellule modifiée.
+
+	Exemple de fichier XML data/<Nom du modèle>/<Login de l'utilisateur>/<Numéro de version>
+	<Datas>
+		<Update-Cell idRow="2" idCol="0" text="Your text" numVersion="1" />
+	</Datas>
+
